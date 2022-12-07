@@ -4,7 +4,7 @@ install.packages('writexl')
 library(writexl)
 library(dplyr)
 library(plyr)
-nomes<-select(nomespossiveis,arkId,fullName,birthLikeDate,fatherFullName,motherFullName,parentFullNames)
+nomes<-select(nomespossiveis,arkId,fullName,birthLikeDate,deathLikeDate,fatherFullName,motherFullName,parentFullNames)
 nomes
 nomes2<-arrange(nomes,birthLikeDate)
 nomes2
